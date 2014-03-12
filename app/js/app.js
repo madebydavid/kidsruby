@@ -256,6 +256,12 @@ function initEditor() {
   getEditor().setTabSize(2);
   getEditor().setUseSoftTabs(true);
 
+  ace.require("ace/ext/language_tools");
+  getAce().setOptions({
+      enableBasicAutocompletion: true
+  });
+
+
   // initialize content
   setDefaultEditorContent();
 }
